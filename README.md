@@ -8,3 +8,6 @@ yourenv >=npm 7.18.1
 3. run react
 npm run start
 ```
+
+# Tip
+1. sudo npm install antd --save

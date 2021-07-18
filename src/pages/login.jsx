@@ -12,6 +12,21 @@ const Login =() => {
     const goAdmin=()=>{
         history.push('/adminHomePage');
     }
+    const goPay=()=>{
+        history.push('/adminPay');
+    }
+    const goResult=()=>{
+        history.push('/commonResult');
+    }
+    const goUserEdit=()=>{
+        history.push('/userEdit');
+    }
+    const goUserHome=()=>{
+        history.push('/userInfo');
+    }
+    const goAdminHome=()=>{
+        history.push('/adminInfo');
+    }
     const goSign=()=>{
         history.push('/signup');
     }
@@ -65,6 +80,31 @@ const Login =() => {
                     </div>
                 </div>
             </section>
+            <div className="column col-md-4 float-sm-end">
+                <button className="btn btn-default btn-full" onClick={goPay}>
+                    <span className="smallText">pay</span>
+                </button>
+            </div>
+            <div className="column col-md-4 float-sm-end">
+                <button className="btn btn-default btn-full" onClick={goResult}>
+                    <span className="smallText">result log</span>
+                </button>
+            </div>
+            <div className="column col-md-4 float-sm-end">
+                <button className="btn btn-default btn-full" onClick={goUserHome}>
+                    <span className="smallText">user home</span>
+                </button>
+            </div>
+            <div className="column col-md-4 float-sm-end">
+                <button className="btn btn-default btn-full" onClick={goAdminHome}>
+                    <span className="smallText">admin home</span>
+                </button>
+            </div>
+            <div className="column col-md-4 float-sm-end">
+                <button className="btn btn-default btn-full" onClick={goUserEdit}>
+                    <span className="smallText">user edit</span>
+                </button>
+            </div>
             <div class="column col-md-4 float-sm-end">
                 <button class="btn btn-default btn-full" onClick={goAdmin}>
                     <span className="smallText">For admin page test</span>

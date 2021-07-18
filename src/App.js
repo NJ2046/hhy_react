@@ -19,6 +19,9 @@ import UHomePage from './pages/Users/uHomePage'
 //Admin
 import AHomePage from './pages/Admin/aHomePage'
 import AExpert from './pages/Admin/aExpert'
+import APay from './pages/Admin/aPay'
+import AInfo from './pages/Admin/adminInfo'
+import CResult from './pages/cResults'
 import AData from './pages/Admin/aData'
 import AExpertsOrder from './pages/Admin/aExpertOrder'
 import AExpertApplications from './pages/Admin/aExpertApplication'
@@ -38,6 +41,11 @@ function App() {
 
               {/* User */}
               <Route exact path="/userHomePage" component={UHomePage}/>
+              {/*author:hanyuan
+              user_code:user_edit,user_home
+              */}
+              <Route exact path="/userEdit" component={UserEdit}/>
+              <Route exact path="/userInfo" component={UserInfo}/>
 
               {/* Admin */}
               <Route exact path="/adminHomePage" component={AHomePage}/>
@@ -45,8 +53,17 @@ function App() {
               <Route exact path="/adminExpertOrders" component={AExpertsOrder}/>
               <Route exact path="/adminExpertApplications" component={AExpertApplications}/>
               <Route exact path="/adminData" component={AData}/>
-              <Route exact path="/userEdit" component={UserEdit}/>
-              <Route exact path="/userInfo" component={UserInfo}/>
+              {/* author:hanyuan
+              admin_code:pay,expert_home
+              */}
+              <Route exact path="/adminPay" component={APay}/>
+              <Route exact path="/adminInfo" component={AInfo}/>
+
+
+              {/*author:hanyuan
+              common_code:log_result
+              */}
+              <Route exact path="/commonResult" component={CResult}/>
           </Switch>
       </BrowserRouter>
     </>

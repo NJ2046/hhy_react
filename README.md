@@ -11,15 +11,18 @@ npm run start
 
 # Docker
 ```
-docker pull node
+1. docker pull node
+2. 
+
 unix
-docker run -itd --name hhy -v hhy_react:/app -p 3000:3000 vuejs/ci
+docker run -itd --name hhy -v hhy_react:/app -p 3000:3000 node
 windows
-docker run -itd --name hhy -v /d/earlydata/project/hhy_react:/app -p 3000:3000 vuejs/ci
-docker exec -it hhy bash
-cd /app
-npm install 
-npm run start
+docker run -itd --name hhy -v /d/earlydata/project/hhy_react:/app -p 3000:3000 node
+
+3. docker exec -it hhy bash
+4. cd /app
+5. npm install 
+6. npm run start
 ```
 
 # Tip

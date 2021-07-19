@@ -35,6 +35,12 @@ export default class UserEdit extends Component {
               />
               <div>User Name</div>
               <div>My Profile and credential</div>
+
+
+              <button>
+                focus on
+              </button>
+
             </div>
             <br />
             <br />
@@ -137,17 +143,7 @@ export default class UserEdit extends Component {
           </div>
           <div style={{ width: "400px" }}>
             <div style={{ marginTop: "320px" }}>
-              <p style={{marginBottom:'40px'}}>
-                <button className=" apply-btn  icon-button     ">
-                  Apply for
-                </button>
-              </p>
-              <p>
-                <button className=" apply-btn  icon-button  create   ">
-                  Create Space
-                  <i className="icon-plus"></i>
-                </button>
-              </p>
+
             </div>
           </div>
         </div>

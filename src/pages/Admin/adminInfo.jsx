@@ -38,6 +38,9 @@ export default class AInfo extends Component {
               />
               <div>User Name</div>
               <div>My Profile and credential</div>
+              <button onClick={goPay}>
+                pay for
+              </button>
             </div>
             <br />
             <br />
@@ -140,22 +143,7 @@ export default class AInfo extends Component {
           </div>
           <div style={{ width: "400px" }}>
             <div style={{ marginTop: "320px" }}>
-              <p style={{marginBottom:'40px'}}>
-                <button className=" apply-btn  icon-button     " onClick={goPay}>
-                  Pay for
-                </button>
-              </p>
-              <p style={{marginBottom:'40px'}}>
-                <button className=" apply-btn  icon-button     ">
-                  Apply for
-                </button>
-              </p>
-              <p>
-                <button className=" apply-btn  icon-button  create   ">
-                  Create Space
-                  <i className="icon-plus"></i>
-                </button>
-              </p>
+
             </div>
           </div>
         </div>
